@@ -34,12 +34,12 @@
 		}
 		
 		# Load TweetPHP and change options:
-		require_once('tweet-php/TweetPHP.php');
+		require_once('external-php/tweet-php/TweetPHP.php');
 		$TweetPHP = new TweetPHP(array(
-			'consumer_key'              => 'QBxjxRVPnNOdJqoTprdZadQAD',
-			'consumer_secret'           => 'lp3f6AOnk32Gw7HojCqtx76rpH3aC0K3VcK9vep8ulHWTslpjK',
-			'access_token'              => '1551218856-9T5ulzYRArR6VTvkS0u9EARpuHVI9EqllDmwsob',
-			'access_token_secret'       => '7xZzbWcYzGsq6JXx04fVlfVKvLTM0IF7mX7wxvSufhdr2',
+			'consumer_key'              => 'xxx',
+			'consumer_secret'           => 'xxx',
+			'access_token'              => 'xxx',
+			'access_token_secret'       => 'xxx',
 			'twitter_screen_name'       => $user,
 			'tweets_to_display'			=> 25,
 			'twitter_wrap_open'			=> '',
