@@ -36,21 +36,21 @@
 		# Load TweetPHP and change options:
 		require_once('external-php/tweet-php/TweetPHP.php');
 		$TweetPHP = new TweetPHP(array(
-			'consumer_key'              => 'xxx',
-			'consumer_secret'           => 'xxx',
-			'access_token'              => 'xxx',
-			'access_token_secret'       => 'xxx',
-			'twitter_screen_name'       => $user,
-			'tweets_to_display'			=> 25,
+			'consumer_key'          		=> 'xxx',
+			'consumer_secret'       		=> 'xxx',
+			'access_token'              		=> 'xxx',
+			'access_token_secret'   		=> 'xxx',
+			'twitter_screen_name'       		=> $user,
+			'tweets_to_display'			=> 30,
 			'twitter_wrap_open'			=> '',
 			'tweet_wrap_open'			=> '<div class="feed twitter" data-colour="rand"><h1>t</h1><div class="container"><h2>@' . $user . '</h2><h3>recent tweet</h3><p>',
 			'meta_wrap_open'			=> '<br></br>',
 			'meta_wrap_close'			=> '',
 			'tweet_wrap_close'			=> '</p></div></div>',
-			'twitter_wrap_close'		=> '',
-			'error_message'				=> 'Oops, that users tweets can\'t be accessed, ',
-			'error_link_text'			=> 'try through twitter instead.',
-			'debug'						=> false
+			'twitter_wrap_close'			=> '',
+			'error_message'				=> 'Oops, that users tweets can\'t be accessed.',
+			'error_link_text'			=> 'Why not try through twitter instead?',
+			'debug'					=> false
 		));
 	?>
 </head>
@@ -71,14 +71,14 @@
 				<p>thisfeed is a simple experiment, to deliver public tweets in a beautiful way. thisfeed is 100% open source and avaliable to grab off of GitHub for free.</p>
 			</div>
 		</div>
-		<div id="thisfeed-meta-changelog" class="feed" data-colour="#908090">
+		<!-- <div id="thisfeed-meta-changelog" class="feed" data-colour="#908090">
 			<h1>c</h1>
 			<div class="container">
 				<h2>changelog</h2>
 				<h3>thisfeed version 0.2</h3>
 				<p>thisfeed now has the ability to make tweet images work as backgrounds and tweets now keep the same background colour. Other technical changes were also made under the hood, such as a nice error message for those without Javscript enabled.</p>
 			</div>
-		</div>
+		</div> -->
 		<?php echo $TweetPHP->get_tweet_list(); ?></p>
 	</div>
 	<footer class="animated fadeIn">
